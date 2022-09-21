@@ -88,6 +88,20 @@ section#header img {
     max-width: 30vw;
 }
 
+section#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: auto;
+    column-gap: auto;
+}
+
+section#gallery img {
+    max-width: 50%;
+    max-height: 350px;
+    margin: 5px;
+}
+
 #header {
     text-align: center;
 }
@@ -168,7 +182,7 @@ tbody .past {
 }
 
 .img-responsive {
-    width: 100%;
+    max-width: 100%;
 }
 
 /* Contacts CSS */
