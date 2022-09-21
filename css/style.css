@@ -42,7 +42,7 @@ table {
 }
 
 tr:hover {
-    background-color: rgba(51, 51, 51, 70%);
+    background-color: rgba(66, 66, 66, 0.7);
 }
 
 tr.rating {
