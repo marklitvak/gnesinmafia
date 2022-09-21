@@ -1,13 +1,14 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Comic Sans MS', 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #fff;
     background-color: #444;
+    font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #9c1c1c;
+    color: #b42020;
 }
 
 h1 {
@@ -23,9 +24,32 @@ h3 {
     font-size: 18px;
 }
 
+blockquote {
+    text-align: right;
+}
+
+blockquote a {
+    font-weight: 700;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+table .special {
+    background-color: whitesmoke;
+    color: #9c1c1c;
+}
+
+table .special a {
+    color: #9c1c1c;
+    font-weight: 700;
+}
+
+thead {
+    text-align: center;
+    font-weight: 600;
 }
 
 section{
@@ -66,14 +90,14 @@ th, td {
     border-color: whitesmoke;
     padding: 5px;
     padding-left: 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 tbody .past {
     background-color: grey;
 }
 
-div .text-center {
+.text-center {
     text-align: center;
 }
 
@@ -122,6 +146,16 @@ a {
 }
 
 /* Contacts CSS */
+section#contacts {
+    border-top: whitesmoke;
+    background-color: #333;
+}
+
+#contacts .heading {
+    padding-top: 10px;
+    color: whitesmoke;
+}
+
 ul.address {
     margin-top: 30px;
     list-style: none;
@@ -131,4 +165,5 @@ ul.address {
 
 .address a {
     font-weight: 700;
+    color:#b42020;
 }
