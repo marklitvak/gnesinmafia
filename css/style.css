@@ -88,7 +88,7 @@ a {
 
 /* NAV CSS */
 .topnav {
-    background-color: #444;
+    background-color: #333;
     overflow: hidden;
     width: 100%;
 }
@@ -105,7 +105,7 @@ a {
 
 .topnav a:hover {
     background-color: whitesmoke;
-    color: #444;
+    color: #333;
 }
 
 .topnav a.active {
