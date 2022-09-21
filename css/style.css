@@ -41,6 +41,10 @@ table {
     border-collapse: collapse;
 }
 
+tr {
+    transition: 0.3s;
+}
+
 tr:hover {
     background-color: rgba(66, 66, 66, 0.7);
 }
