@@ -48,7 +48,14 @@ tr:hover {
 tr.rating {
     background-image: url(../images/background/fire-png-transparent-2.png);
     background-repeat: repeat-x;
-    background-size: 100px 40px;
+    background-size: 100px 100%;
+    background-position-y: bottom;
+}
+
+tr.special {
+    background-image: url(../images/background/confidential.png);
+    background-repeat: repeat-x;
+    background-size: 100px 100%;
     background-position-y: bottom;
 }
 
@@ -65,7 +72,20 @@ thead {
 
 section{
     padding: 0 15px;
-    margin-top: 80px;
+    margin-top: 50px;
+}
+
+section#header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#header img {
+    float: left;
+    max-width: 30vw;
 }
 
 #header {
@@ -125,7 +145,7 @@ tbody .past {
 
 .topnav a {
     float:left;
-    color: #9c1c1c;
+    color: #e4a34e;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
