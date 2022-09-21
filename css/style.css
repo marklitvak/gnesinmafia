@@ -102,7 +102,7 @@ section#gallery {
 }
 
 section#gallery img {
-    max-width: 50%;
+    max-width: 300px;
     max-height: 350px;
     margin: 5px;
 }
