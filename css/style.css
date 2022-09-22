@@ -223,15 +223,15 @@ ul.address {
 
 /* Effects */
 .glow {
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
 }
   
 @keyframes glow {
     from {
-      text-shadow: 0 0 8px rgb(0, 0, 0), 0 0 16px rgb(65, 39, 39), 0 0 24px #e60073, 0 0 32px #e60073, 0 0 40px #e60073, 0 0 48px #e60073;
+      text-shadow: 0 0 8px rgb(0, 0, 0), 0 0 16px rgb(65, 39, 39), 0 0 24px #e60073, 0 0 32px #e60073;
     }
     
     to {
-      text-shadow: 0 0 16px rgb(0, 0, 0), 0 0 24px #ff4da6, 0 0 32px #ff4da6, 0 0 40px #ff4da6, 0 0 48px #ff4da6, 0 0 50px #ff4da6;
+      text-shadow: 0 0 16px rgb(0, 0, 0), 0 0 24px #ff4da6, 0 0 32px #ff4da6, 0 0 40px #ff4da6;
     }
 }
