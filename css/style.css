@@ -77,6 +77,14 @@ p {
     text-align: justify;
 }
 
+.green {
+    color: #47ff63;
+}
+
+.red {
+    color: #b42020;
+}
+
 thead {
     text-align: center;
     font-weight: 600;
