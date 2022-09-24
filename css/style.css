@@ -1,6 +1,6 @@
 body {
     font-family: 'Comic Sans MS', 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: #fff;
     background-color: #444;
@@ -12,7 +12,7 @@ body {
     background-image: 
     repeating-linear-gradient(135deg,#232323,#232323 10%, transparent 10%, transparent 50%),
     repeating-linear-gradient(-135deg,#232323,#232323 10%, transparent 10%, transparent 50%);
-    background-size: 12px 12px;   
+    background-size: 20px 25px;   
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +30,10 @@ h2 {
 
 h3 {
     font-size: 22px;
+}
+
+h4 {
+    font-size: 19px;
 }
 
 blockquote {
@@ -119,11 +123,17 @@ section#gallery img {
     section {
       padding: 0 calc(50vw - 270px);
     }
+    .glow {
+        text-shadow: 0 0 16px rgb(0, 0, 0), 0 0 24px #ff4da6, 0 0 32px #ff4da6;
+    }
 }
   
 @media (min-width: 767.98px){
     section {
       padding: 0 calc(50vw - 360px);
+    }
+    .glow {
+        text-shadow: 0 0 16px rgb(0, 0, 0), 0 0 24px #ff4da6, 0 0 32px #ff4da6;
     }
 }
   
@@ -131,11 +141,37 @@ section#gallery img {
     section {
       padding: 0 calc(50vw - 480px);
     }
+    .glow {
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+      
+    @keyframes glow {
+        from {
+          text-shadow: 0 0 8px rgb(0, 0, 0), 0 0 16px rgb(65, 39, 39), 0 0 24px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 16px rgb(0, 0, 0), 0 0 24px #ff4da6, 0 0 32px #ff4da6;
+        }
+    }
 }
   
 @media (min-width: 1199.98px){
     section {
       padding: 0 calc(50vw - 590px);
+    }
+    .glow {
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+      
+    @keyframes glow {
+        from {
+          text-shadow: 0 0 8px rgb(0, 0, 0), 0 0 16px rgb(65, 39, 39), 0 0 24px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 16px rgb(0, 0, 0), 0 0 24px #ff4da6, 0 0 32px #ff4da6;
+        }
     }
 }
 
@@ -221,19 +257,3 @@ ul.address {
     text-decoration: none;
 }
 
-/* Effects */
-/*
-.glow {
-    animation: glow 2s ease-in-out infinite alternate;
-}
-  
-@keyframes glow {
-    from {
-      text-shadow: 0 0 8px rgb(0, 0, 0), 0 0 16px rgb(65, 39, 39), 0 0 24px #e60073, 0 0 32px #e60073;
-    }
-    
-    to {
-      text-shadow: 0 0 16px rgb(0, 0, 0), 0 0 24px #ff4da6, 0 0 32px #ff4da6, 0 0 40px #ff4da6;
-    }
-}
-*/
