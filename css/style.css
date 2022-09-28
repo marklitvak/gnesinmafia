@@ -150,7 +150,7 @@ section#gallery img {
       padding: 0 calc(50vw - 480px);
     }
     .glow {
-        animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 1.2s ease-in-out infinite alternate;
     }
       
     @keyframes glow {
@@ -169,7 +169,7 @@ section#gallery img {
       padding: 0 calc(50vw - 590px);
     }
     .glow {
-        animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 1.2s ease-in-out infinite alternate;
     }
       
     @keyframes glow {
