@@ -12,11 +12,11 @@ body {
     background-image: 
     repeating-linear-gradient(135deg,#232323,#232323 10%, transparent 10%, transparent 50%),
     repeating-linear-gradient(-135deg,#232323,#232323 10%, transparent 10%, transparent 50%);
-    background-size: 20px 25px;   
+    background-size: 40px 30px;   
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #b42020;
+    color: #c92424;
 }
 
 h1 {
@@ -67,7 +67,7 @@ tr.special {
     background-position-y: bottom;
 }
 
-a {
+a, summary {
     color: #e4a34e;
     font-weight: 700;
     text-decoration: underline;
@@ -78,11 +78,11 @@ p {
 }
 
 .green {
-    color: #47ff63;
+    color: #33c048;
 }
 
 .red {
-    color: #b42020;
+    color: #dd2b2b;
 }
 
 thead {
@@ -265,3 +265,37 @@ ul.address {
     text-decoration: none;
 }
 
+
+/* Summary custom */
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+   padding: .3em .5em .3em .4em;
+   display:inline-block;
+   cursor: pointer;
+}
+
+summary:after {  
+  content: "+";
+  margin-left: .3em;
+  display: inline-block;
+  transition: transform .5s;
+}
+
+details[open] > summary:after {
+  transform: scale(1,-1);
+}
+
+summary ~ * {
+   padding:0 1em 0 1em;
+}
+
+details[open] summary ~ *{ 
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
