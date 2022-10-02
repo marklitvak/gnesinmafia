@@ -192,7 +192,8 @@ th, td {
 }
 
 tbody .past {
-    background-color: grey;
+    background-color: #232323;
+    color: grey;
 }
 
 .text-center {
